@@ -2,12 +2,12 @@ terraform {
   required_version = ">= 1.3.0"
 
   # State Storage and Locking
-  # backend "s3" {
-  #   region         = "ap-east-1"
-  #   bucket         = "terraform-559050208886"
-  #   key            = "iam"
-  #   dynamodb_table = "terraform_lock"
-  # }
+  backend "s3" {
+    region         = "ap-east-1"
+    bucket         = "terraform-559050208886"
+    key            = "iam"
+    dynamodb_table = "terraform_lock"
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
