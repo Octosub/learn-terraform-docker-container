@@ -3,7 +3,7 @@ terraform {
 
   # State Storage and Locking
   # backend "s3" {
-  #   region         = "ap-east-1"
+  #   region         = "us-east-1"
   #   bucket         = "terraform-559050208886"
   #   key            = "iam"
   #   dynamodb_table = "terraform_lock"
